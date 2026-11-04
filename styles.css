@@ -3,8 +3,8 @@
   --background: #080808;
   --surface: #111110;
   --text: #f2f2f0;
-  --muted: #a7a7a2;
-  --quiet: #73736e;
+  --muted: #d0d0cc;
+  --quiet: #a6a6a1;
   --line: #292927;
   --accent: #c5a36a;
   --page-width: 1160px;
@@ -24,7 +24,7 @@ body {
   background: var(--background);
   color: var(--text);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
@@ -91,7 +91,7 @@ button {
 .nav-links a,
 .back-to-top {
   color: var(--muted);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   transition: color 180ms ease;
 }
 
@@ -135,7 +135,7 @@ button {
   gap: 0.75rem;
   margin: 0;
   color: var(--muted);
-  font-size: 0.64rem;
+  font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.16em;
   line-height: 1.5;
@@ -167,7 +167,7 @@ button {
   max-width: 410px;
   margin: 0;
   color: var(--muted);
-  font-size: 0.96rem;
+  font-size: 1.05rem;
   line-height: 1.9;
 }
 
@@ -178,7 +178,7 @@ button {
   margin-top: 2rem;
   padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--line);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   transition: border-color 180ms ease, color 180ms ease;
 }
 
@@ -250,7 +250,7 @@ button {
   position: absolute;
   z-index: 2;
   color: rgba(242, 242, 240, 0.64);
-  font-size: 0.52rem;
+  font-size: 0.62rem;
   letter-spacing: 0.13em;
 }
 
@@ -275,7 +275,7 @@ button {
   align-items: center;
   gap: 0.7rem;
   color: var(--quiet);
-  font-size: 0.62rem;
+  font-size: 0.72rem;
 }
 
 .scroll-cue span {
@@ -320,7 +320,7 @@ button {
   max-width: 260px;
   margin: 0 0 0.35rem;
   color: var(--muted);
-  font-size: 0.82rem;
+  font-size: 0.9rem;
 }
 
 .project-grid {
@@ -351,7 +351,7 @@ button {
   top: 1rem;
   right: 1rem;
   color: rgba(255, 255, 255, 0.6);
-  font-size: 0.58rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1em;
 }
 
@@ -380,7 +380,7 @@ button {
 
 .mock-label,
 .mock-cta {
-  font-size: 0.52rem;
+  font-size: 0.65rem;
   letter-spacing: 0.12em;
 }
 
@@ -466,7 +466,7 @@ button {
 
 .weekend-kicker {
   color: rgba(255, 255, 255, 0.78);
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   letter-spacing: 0.15em;
 }
 
@@ -494,7 +494,7 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 50%;
   color: white;
-  font-size: 0.5rem;
+  font-size: 0.65rem;
   letter-spacing: 0.12em;
   line-height: 1.4;
   text-align: center;
@@ -523,14 +523,14 @@ button {
 
 .project-meta h3 {
   margin: 0;
-  font-size: 0.94rem;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 .project-meta p {
   margin: 0.2rem 0 0;
   color: var(--quiet);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
 }
 
 .round-link {
@@ -554,7 +554,7 @@ button {
 .projects-note {
   margin: 2rem 0 0;
   color: var(--quiet);
-  font-size: 0.68rem;
+  font-size: 0.78rem;
 }
 
 .about {
@@ -602,7 +602,7 @@ button {
 .about-details p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.92rem;
   line-height: 1.9;
 }
 
@@ -628,7 +628,7 @@ button {
 
 .about-facts div > span:last-child {
   color: var(--quiet);
-  font-size: 0.63rem;
+  font-size: 0.72rem;
 }
 
 .footer {
@@ -682,7 +682,7 @@ button {
 .footer-bottom p {
   margin: 0;
   color: var(--quiet);
-  font-size: 0.66rem;
+  font-size: 0.75rem;
 }
 
 .back-to-top {
@@ -734,7 +734,7 @@ button {
   }
 
   .project-meta h3 {
-    font-size: 0.83rem;
+    font-size: 0.9rem;
   }
 
   .round-link {
@@ -815,7 +815,7 @@ button {
   .nav-links a {
     padding: 0.85rem 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    font-size: 0.82rem;
+    font-size: 0.9rem;
   }
 
   .nav-links a:last-child {
@@ -840,7 +840,7 @@ button {
 
   .hero-description {
     max-width: 440px;
-    font-size: 0.88rem;
+    font-size: 1rem;
   }
 
   .hero-art {
@@ -925,7 +925,7 @@ button {
   }
 
   .about-facts div > span:last-child {
-    font-size: 0.58rem;
+    font-size: 0.78rem;
   }
 
   .footer {
@@ -946,12 +946,12 @@ button {
 
   .footer-bottom p {
     max-width: 150px;
-    font-size: 0.58rem;
+    font-size: 0.66rem;
     text-align: center;
   }
 
   .back-to-top {
-    font-size: 0.65rem;
+    font-size: 0.75rem;
   }
 }
 
