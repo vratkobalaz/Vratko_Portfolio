@@ -121,6 +121,17 @@ button {
   align-items: center;
   gap: 4rem;
   padding-top: 76px;
+  isolation: isolate;
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0 0 0 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(5, 5, 5, 0.94) 0%, rgba(5, 5, 5, 0.8) 28%, rgba(5, 5, 5, 0.45) 58%, rgba(5, 5, 5, 0.74) 100%),
+    url("img/hero.jpg") center/cover no-repeat;
+  content: "";
 }
 
 .hero-copy {
@@ -202,25 +213,25 @@ button {
   justify-self: end;
   overflow: hidden;
   background:
-    radial-gradient(ellipse at 48% 76%, rgba(162, 119, 68, 0.23), transparent 36%),
-    linear-gradient(148deg, #20201d 3%, #111110 53%, #090909 100%);
+    linear-gradient(180deg, rgba(8, 8, 8, 0.15), rgba(8, 8, 8, 0.7));
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
 }
 
 .hero-art::before {
   position: absolute;
-  inset: 12%;
-  border: 1px solid rgba(242, 242, 240, 0.08);
+  inset: 0;
+  background: linear-gradient(180deg, rgba(5, 5, 5, 0.72), rgba(5, 5, 5, 0.28));
   content: "";
 }
 
 .hero-illustration {
   position: absolute;
-  inset: 7% 6% 14% 6%;
+  inset: 10% 8% 16% 8%;
   z-index: 2;
-  width: 90%;
-  height: 82%;
-  opacity: 1;
-  filter: drop-shadow(0 0 22px rgba(197, 163, 106, 0.2));
+  width: 84%;
+  height: 74%;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 22px rgba(197, 163, 106, 0.18));
   pointer-events: none;
 }
 
@@ -232,8 +243,8 @@ button {
   width: 37%;
   aspect-ratio: 1;
   border-radius: 50%;
-  background: linear-gradient(145deg, #dbc195, #a27c4e 65%, #64503a);
-  box-shadow: 0 0 90px rgba(197, 163, 106, 0.15);
+  background: linear-gradient(145deg, rgba(219, 193, 149, 0.86), rgba(162, 124, 78, 0.82) 65%, rgba(100, 80, 58, 0.86));
+  box-shadow: 0 0 90px rgba(197, 163, 106, 0.18);
 }
 
 .art-orbit {
