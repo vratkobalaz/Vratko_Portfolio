@@ -213,6 +213,16 @@ button {
   content: "";
 }
 
+.hero-illustration {
+  position: absolute;
+  inset: 9% 8% 14% 7%;
+  z-index: 1;
+  width: 85%;
+  height: 77%;
+  opacity: 0.88;
+  pointer-events: none;
+}
+
 .art-sun {
   position: absolute;
   top: 20%;
