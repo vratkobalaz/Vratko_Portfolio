@@ -215,16 +215,18 @@ button {
 
 .hero-illustration {
   position: absolute;
-  inset: 9% 8% 14% 7%;
-  z-index: 1;
-  width: 85%;
-  height: 77%;
-  opacity: 0.88;
+  inset: 7% 6% 14% 6%;
+  z-index: 2;
+  width: 90%;
+  height: 82%;
+  opacity: 1;
+  filter: drop-shadow(0 0 22px rgba(197, 163, 106, 0.2));
   pointer-events: none;
 }
 
 .art-sun {
   position: absolute;
+  z-index: 0;
   top: 20%;
   left: 32%;
   width: 37%;
@@ -258,7 +260,7 @@ button {
 .art-caption,
 .art-index {
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   color: rgba(242, 242, 240, 0.64);
   font-size: 0.62rem;
   letter-spacing: 0.13em;
@@ -324,6 +326,40 @@ button {
   font-weight: 400;
   letter-spacing: -0.065em;
   line-height: 1.1;
+}
+
+.title-with-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.title-with-icon h2 {
+  margin: 0;
+}
+
+.section-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid rgba(242, 242, 240, 0.22);
+  border-radius: 0.5rem;
+  background: rgba(242, 242, 240, 0.03);
+  color: var(--accent);
+  box-shadow: inset 0 0 0 1px rgba(197, 163, 106, 0.09);
+  flex: 0 0 auto;
+}
+
+.section-icon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5;
 }
 
 .section-intro {
@@ -604,6 +640,11 @@ button {
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
+.about-title-wrap,
+.footer-title-wrap {
+  margin-top: 0.4rem;
+}
+
 .muted-text {
   color: var(--muted);
 }
@@ -657,7 +698,7 @@ button {
 }
 
 .footer-main h2 {
-  margin: 1.4rem 0 1.6rem;
+  margin: 0 0 1.6rem;
   font-size: clamp(3.2rem, 7vw, 6.5rem);
   font-weight: 400;
   letter-spacing: -0.075em;
@@ -668,10 +709,16 @@ button {
   color: var(--muted);
 }
 
+.footer-title-wrap {
+  display: block;
+  margin-top: 0.4rem;
+}
+
 .contact-link {
   display: inline-flex;
   align-items: center;
   gap: 1.2rem;
+  margin-top: 0;
   padding-bottom: 0.45rem;
   border-bottom: 1px solid var(--line);
   font-size: 0.85rem;
